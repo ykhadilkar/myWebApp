@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: aspnetapp
+  name: aspnetapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: aspnetapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: aspnetapp
+    spec:
+      containers:
+      - image: harbor.lab.khadilkar.net/demo/aspnetapp
+        name: aspnetapp
+status: {}
