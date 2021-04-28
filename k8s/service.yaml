@@ -3,16 +3,16 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: aspnetapp
-  name: aspnetapp
+    app: mywebapp
+  name: mywebapp
 spec:
   ports:
-  - name: 80-80
+  - name: mywebapp
     port: 80
     protocol: TCP
     targetPort: 80
   selector:
-    app: aspnetapp
+    app: mywebapp
   type: ClusterIP
 status:
   loadBalancer: {}

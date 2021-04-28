@@ -1,12 +1,12 @@
 # Sample Dockerized ASPNET App
 ## Build Docker image
-```docker build -t harbor.lab.khadilkar.net/demo/aspnetapp .```
+```docker build -t ykhadilkar/mywebapp .```
 
 ## Run Docker image locally
-```docker run --rm -p 8080:80 harbor.lab.khadilkar.net/demo/aspnetapp```
+```docker run --rm -p 8080:80 ykhadilkar/mywebapp```
 
 ## Push it to registry
-```docker push harbor.lab.khadilkar.net/demo/aspnetapp```
+```docker push ykhadilkar/mywebapp```
 
 ## Deploy to Kubernetes
 

@@ -3,21 +3,21 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: aspnetapp
-  name: aspnetapp
+    app: mywebapp
+  name: mywebapp
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: aspnetapp
+      app: mywebapp
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: aspnetapp
+        app: mywebapp
     spec:
       containers:
-      - image: harbor.lab.khadilkar.net/demo/aspnetapp
-        name: aspnetapp
+      - image: ykhadilkar/mywebapp
+        name: mywebapp
 status: {}
