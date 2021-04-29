@@ -11,7 +11,7 @@
 ## Deploy to Kubernetes
 
 ### Deployment
-```kubernetes apply -f k8s/deployment.yaml```
+```kubectl apply -f k8s/deployment.yaml```
 
 ### Service
-```kubernetes apply -f k8s/service.yaml```
+```kubectl apply -f k8s/service.yaml```
